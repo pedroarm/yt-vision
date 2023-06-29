@@ -4,6 +4,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  animation: load 400ms 600ms backwards;
 }
 
 .sideMenu {
@@ -19,6 +20,8 @@
   background: rgba(255, 255, 255, 0.10);
   box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(255, 255, 255, 0.30) inset, 0px -1px 1px 0px rgba(255, 255, 255, 0.10) inset;
   backdrop-filter: blur(16px);
+
+  animation: loadSideMenu 900ms 500ms backwards;
 }
 
 .icon {
@@ -57,6 +60,8 @@
   background: rgba(255, 255, 255, 0.10);
   box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(255, 255, 255, 0.30) inset, 0px -1px 1px 0px rgba(255, 255, 255, 0.10) inset;
   backdrop-filter: blur(16px);
+
+  animation: loadNavBar 900ms 500ms backwards;
 }
 
 .addressBar {
@@ -128,4 +133,25 @@
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.60);
   backdrop-filter: blur(2px);
+}
+
+@keyframes load {
+  from {
+    scale: 2;
+    opacity: 0;
+  }
+}
+
+@keyframes loadSideMenu {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes loadNavBar {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
 }

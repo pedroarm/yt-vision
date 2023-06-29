@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useCallback, useEffect, useRef, useState } from 'react';
 import YTPlayer from 'youtube-player';
 
@@ -92,7 +93,6 @@ export default function VideoAmbilight({ videoId, videoPlayer, setVideoPlayer, o
   useAnimationFrame(step);
 
   useEffect(() => {
-    console.log()
     const video = YTPlayer('ambilight-video', {
       videoId,
     }) as unknown as YouTubePlayer;

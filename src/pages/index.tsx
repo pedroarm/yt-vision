@@ -13,6 +13,7 @@ import VideoAmbilight from "../components/VideoAmbilight";
 import styles from "./styles.module.scss";
 import { useState } from "react";
 import { PlayerStates, YouTubePlayer } from "../types";
+import Head from "next/head";
 
 const Home: NextPage = () => {
 	const [videoPlayer, setVideoPlayer] = useState<YouTubePlayer>();
@@ -68,6 +69,9 @@ const Home: NextPage = () => {
 
 	return (
 		<div className={styles.container}>
+			<Head>
+        <title>{'YT - Vision XP'}</title>
+      </Head>
 			<aside className={styles.sideMenu}>
 				<div className={styles.icon}>
 					{videoPlayerState === 1 ? (
