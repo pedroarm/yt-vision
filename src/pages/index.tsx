@@ -20,8 +20,8 @@ const Home: NextPage = () => {
 	const [videoPlayerState, setVideoPlayerState] = useState<PlayerStates>(PlayerStates.UNSTARTED);
 	const [isVideoMuted, setIsVideoMuted] = useState<boolean>(false);
 
-	const [searchValue, setSearchValue] = useState<string>("https://www.youtube.com/watch?v=G5kzUpWAusI");
-	const [videoId, setVideoId] = useState<string>("G5kzUpWAusI");
+	const [searchValue, setSearchValue] = useState<string>("https://www.youtube.com/watch?v=8B1EtVPBSMw");
+	const [videoId, setVideoId] = useState<string>("8B1EtVPBSMw");
 
 	const handleMuteVideo = () => {
 		videoPlayer?.mute();
